@@ -2,8 +2,7 @@ package com.bs.practice.list.music.model.vo;
 
 import java.util.Objects;
 
-public class Music implements Comparable{
-	
+public class Music implements Comparable {
 	private String title;
 	private String singer;
 	
@@ -35,7 +34,7 @@ public class Music implements Comparable{
 
 	@Override
 	public String toString() {
-		return singer + " - " + title;
+		return "Music [title=" + title + ", singer=" + singer + "]";
 	}
 
 	@Override
@@ -54,16 +53,12 @@ public class Music implements Comparable{
 		Music other = (Music) obj;
 		return Objects.equals(singer, other.singer) && Objects.equals(title, other.title);
 	}
-	
+
 	@Override
 	public int compareTo(Object o) {
-		Music m = (Music)o;
+		Music m=(Music)o;
 		return m.getSinger().compareTo(singer);
-//		int result = this.title.compareTo(m.title);
-//		if(result != 0) {
-//			return result;
-//		} else {
-//			return this.singer.compareTo(m.singer);
-//		}
 	}
+	
+	
 }
