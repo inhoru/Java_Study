@@ -20,6 +20,7 @@ public class MusicView {
 			System.out.println("6. 특정 곡 정보 수정");
 			System.out.println("7. 곡명 오름차순 정령");
 			System.out.println("8. 가수명 내림차순 정력");
+			System.out.println("8. 가수명 내림차순 정력");
 			System.out.println("9. 종료");
 			System.out.print("메뉴 번호 선택 : ");
 			int cho=sc.nextInt();
